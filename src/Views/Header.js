@@ -8,7 +8,7 @@ function Header() {
             <div class="container">
                 <div class="masthead-subheading">Globally Inspired. Nature Based. Gender Neutral. </div>
                 <div class="masthead-heading text-uppercase">Hair + Body Care.</div>
-                <a class="btn btn-primary btn-x1 text-uppercase" href="#services">Book an Appointment</a>
+                <a class="btn btn-primary btn-x1 text-uppercase" href="#contact">Book an Appointment</a>
             </div>
         </header>
     </div>

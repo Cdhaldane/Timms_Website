@@ -19,7 +19,7 @@ function Navbar() {
                  </button>
                  <div class="collapse navbar-collapse" id="navbarResponsive">
                      <ul class="navbar-nav text-uppercase">
-                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#services">Store</a></li>
                          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>

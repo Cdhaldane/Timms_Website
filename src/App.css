@@ -1,0 +1,23 @@
+#home {
+  background-color: var(--color-bg-2);
+}
+
+#portfolio {
+  background-color: var(--color-bg-1) !important;
+}
+
+#services {
+  background-color: var(--color-bg-2);
+}
+
+#about {
+  background-color: var(--color-bg-2);
+}
+
+#contact {
+  background-color: var(--color-bg-2) !important;
+}
+
+#team {
+  background-color: var(--color-bg-1) !important;
+}

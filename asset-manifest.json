@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Timms_Website/static/css/main.954da3cc.css",
-    "main.js": "/Timms_Website/static/js/main.5a6bd04d.js",
+    "main.js": "/Timms_Website/static/js/main.a80f2913.js",
     "static/media/shampooBG.jpeg": "/Timms_Website/static/media/shampooBG.8206b0e04213f4a5d781.jpeg",
     "index.html": "/Timms_Website/index.html",
     "main.954da3cc.css.map": "/Timms_Website/static/css/main.954da3cc.css.map",
-    "main.5a6bd04d.js.map": "/Timms_Website/static/js/main.5a6bd04d.js.map"
+    "main.a80f2913.js.map": "/Timms_Website/static/js/main.a80f2913.js.map"
   },
   "entrypoints": [
     "static/css/main.954da3cc.css",
-    "static/js/main.5a6bd04d.js"
+    "static/js/main.a80f2913.js"
   ]
 }

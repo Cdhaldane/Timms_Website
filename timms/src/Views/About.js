@@ -4,10 +4,10 @@ import React, { Component, useState, useEffect } from 'react';
 function About() {
   return(
     <div>
-    <section class="page-section" id="about">
+    <section class="page-section hidden" id="about">
       <div class="container">
           <div class="text-center">
-              <h2 class="section-heading text-uppercase">About</h2>
+              <h2 class="section-heading text-uppercase text-primary">About</h2>
               <h3 class="section-subheading text-muted">A little about us.</h3>
           </div>
           <ul class="timeline">

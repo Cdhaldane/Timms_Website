@@ -4,11 +4,11 @@ import React, { Component, useState, useEffect } from 'react';
 function Header() {
   return(
     <div id="home">
-    <header class="masthead">
-            <div class="container">
+    <header class="masthead hidden" >
+            <div class="container mast-text">
                 <div class="masthead-subheading">Globally Inspired. Nature Based. Gender Neutral. </div>
                 <div class="masthead-heading text-uppercase">Hair + Body Care.</div>
-                <a class="btn btn-primary btn-x1 text-uppercase" href="#services">Book an Appointment</a>
+                <img src="shampooBG.jpeg" />
             </div>
         </header>
     </div>

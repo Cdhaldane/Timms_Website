@@ -32,7 +32,7 @@ function Contact() {
 
   return(
     <div>
-    <section class="page-section" id="contact">
+    <section class="page-section hidden" id="contact">
       <div class="container">
           <div class="text-center">
               <h2 class="section-heading text-uppercase">Contact Us</h2>

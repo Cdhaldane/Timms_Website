@@ -27,7 +27,6 @@ function App() {
      <Shop />
      <About />
      <Team />
-     <Contact />
     <Footer />
      </body>
    </Provider>

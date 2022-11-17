@@ -7,11 +7,13 @@
 // Scripts
 //
 
-window.addEventListener('DOMContentLoaded', event => {
 
+window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const navText = document.body.querySelector('#textNav');
+        const navText2 = document.body.querySelector('#textNav2');
         if (!navbarCollapsible) {
             return;
         }
@@ -19,6 +21,23 @@ window.addEventListener('DOMContentLoaded', event => {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
+        }
+
+        if (!navText) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            navText.classList.remove('navbar-text')
+        } else {
+            navText.classList.add('navbar-text')
+        }
+        if (!navText2) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            navText2.classList.remove('navbar-text')
+        } else {
+            navText2.classList.add('navbar-text')
         }
 
     };

@@ -8,10 +8,10 @@ function Shop() {
          <div class="container">
              <div class="text-center">
                  <h2 class="section-heading text-uppercase">Our Global Collection</h2>
-                 <h3 class="section-subheading text-muted">Explore our globally inspired collection of artisanlly crafted, small batch, gender neutral, hair + body care products made from nature, with pure essential oils</h3>
+                 <h3 class="section-subheading">Explore our globally inspired collection of artisanlly crafted, small batch, gender neutral, hair + body care products made from nature, with pure essential oils</h3>
              </div>
-             <div class="row">
-                 <div class="col-lg-4 col-sm-6 mb-4">
+             <div class="row ">
+                 <div class="col-lg-4 col-sm-6 mb-4  hidden p1">
                      <div class="portfolio-item">
                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                              <div class="portfolio-hover">
@@ -25,7 +25,7 @@ function Shop() {
                          </div>
                      </div>
                  </div>
-                 <div class="col-lg-4 col-sm-6 mb-4">
+                 <div class="col-lg-4 col-sm-6 mb-4  hidden p2">
                      <div class="portfolio-item">
                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                              <div class="portfolio-hover">
@@ -39,7 +39,7 @@ function Shop() {
                          </div>
                      </div>
                  </div>
-                 <div class="col-lg-4 col-sm-6 mb-4">
+                 <div class="col-lg-4 col-sm-6 mb-4  hidden p3">
                      <div class="portfolio-item">
                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                              <div class="portfolio-hover">
@@ -53,7 +53,7 @@ function Shop() {
                          </div>
                      </div>
                  </div>
-                 <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                 <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0  hidden p4">
                      <div class="portfolio-item">
                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                              <div class="portfolio-hover">
@@ -67,7 +67,7 @@ function Shop() {
                          </div>
                      </div>
                  </div>
-                 <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                 <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0  hidden p5">
 
                      <div class="portfolio-item">
                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
@@ -82,7 +82,7 @@ function Shop() {
                          </div>
                      </div>
                  </div>
-                 <div class="col-lg-4 col-sm-6">
+                 <div class="col-lg-4 col-sm-6  hidden p6">
 
                      <div class="portfolio-item">
                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">

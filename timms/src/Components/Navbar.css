@@ -2,17 +2,17 @@
 /* define the fonts and colors used in the project */
 :root {
   --font: 'Open Sans', sans-serif;
-  --color-bg: #383F51;
+  --color-bg: #272727;
   --color-txt: #ffff;
-  --color-bg-1: #f8f9fa;
-  --color-bg-2: #ffffff;
-  --color-home: #383F51;
+  --color-bg-1: #272727;
+  --color-bg-2: #f6f1eb;
+  --color-home: #272727;
   --color-about: #DDDBF1;
-  --color-projects: #3C4F76;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
- --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-projects: #373F47;
+  --bs-font-sans-serif: 'Mulish', sans-serif;
+ --bs-font-monospace: 'Mulish', sans-serif;
  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
- --bs-body-font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+ --bs-body-font-family: 'Mulish', sans-serif;
  --bs-body-font-size: 1rem;
  --bs-body-font-weight: 400;
  --bs-body-line-height: 1.5;
@@ -27,8 +27,9 @@
 }
 
 body {
+   zoom: 1.0;
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Mulish', sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -103,34 +104,95 @@ hr {
   border-color: var(--color-home);
 }
 
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.p1{
+  transition-delay: 100ms;
+}
+.p2{
+  transition-delay: 200ms;
+}
+.p3{
+  transition-delay: 300ms;
+}
+.p4{
+  transition-delay: 400ms;
+}
+.p5{
+  transition-delay: 500ms;
+}
+.p6{
+  transition-delay: 600ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+#textNav {
+  position: relative;
+  left: 100px;
+  margin-top: -70px;
+  display: flex !important;
+  padding-left: 100px;
   margin-bottom: 0;
   list-style: none;
   margin-left: auto !important;
+  font-size: 1.3em;
+}
+#textNav2 {
+  position: relative;
+  left: 320px;
+  margin-top: -70px;
+  display: flex !important;
+  padding-left: 100px;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: auto !important;
+  font-size: 1.3em;
+}
+
+.nav-item:hover{
+  font-size: 1.4em;
+  color: var(--color-txt);
+  text-decoration: none;
+}
+
+
+.nav-link {
+  color: black ;
+  text-decoration: none !important;
 }
 
 .page-section {
   padding: 6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
+  color: var(--color-txt);
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  color: var(--color-txt);
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  opacity: 70%;
 }
 
 
 .img-fluid {
   height: 650px;
+  width: 450px;
 }
 .img-fluids {
   max-width: 100%;
@@ -138,20 +200,24 @@ hr {
 }
 
 
-
+#mainNav {
+  left: -800px;
+}
 #mainNav .navbar-brand img {
-  height: 100px;
-  width: 100px;
+  background-color: var(--bs-body-color);
+  border: 10px;
+  transform: rotate(90deg);
+  border-radius: 9px;
+  width: 170px !important;
+  height: 180px !important;
+  position: relative;
+  margin: auto;
+  left: 270px;
+  top: -10px;
 }
-#mainNav .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
-  color: #fff;
-  letter-spacing: 0.0625em;
-}
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: var(--color-about);
-}
+
+
+
 
 @media (min-width: 992px) {
   #mainNav {
@@ -160,6 +226,7 @@ hr {
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+
   }
   #mainNav .navbar-brand {
     font-size: 1.5em;
@@ -168,33 +235,52 @@ hr {
   #mainNav .navbar-brand img {
     height: 100px;
     width: 100px;
+    margin-top: 0px;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
+    padding-top: 0rem;
     padding-bottom: 1rem;
     background-color: var(--color-bg);
+    height: 100px !important;
+    transition: all 1s;
+  }
+
+  #textNav.navbar-text{
+    color: var(--color-txt) !important;
+    margin-top: 10px;
+    position: relative;
+
+  }
+  #textNav2.navbar-text{
+    color: var(--color-txt) !important;
+    margin-top: 10px;
+    position: relative;
+
   }
 
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-  position: absolute;
-  transform: rotate(90deg);
+  top: 15px !important;
+  background-color: transparent;
+  padding: 0px;
+  border: 0px;
+  top: 500px;
   top: -10px;
   }
 }
+
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  width: 53%;
+  margin: auto;
   text-align: center;
   color: var(--color-txt);
-  background-image: url("../../public/shampooBG.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position:center;
-  background-size:cover;
 }
-
+header.masthead img {
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-bottom: -200px;
+}
 
 @media (min-width: 768px) {
   header.masthead {
@@ -202,24 +288,23 @@ header.masthead {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 2.25rem;
-    font-style: italic;
+    color: var(--bs-body-color);
+    font-size: 2.7rem;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 4.5rem;
-    font-weight: 700;
+    color: var(--bs-body-color);
+    font-size: 2.0rem;
     line-height: 4.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
   }
 }
 #portfolio .portfolio-item {
-  max-width: 26rem;
+  width: 26rem;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -231,15 +316,16 @@ header.masthead {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: var(--color-home);
+  background: var(--color-txt);
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  border-radius: 10px 10px 0px 0px;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
-  color: white;
+  color: var(--color-bg);
 }
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
@@ -248,6 +334,7 @@ header.masthead {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
@@ -258,6 +345,10 @@ header.masthead {
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#portfolio .portfolio-item img {
+    border-radius: 10px 10px 0px 0px;
 }
 
 
@@ -433,14 +524,22 @@ header.masthead {
   margin-bottom: 3rem;
   text-align: center;
 }
+.team {
+  color: var(--color-txt);
+}
 .team-member img {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
+.team-member p {
+  color: var(--color-txt);
+  opacity: 60%;
+}
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
+  color: var(--color-txt);
 }
 
 .img-brand {
@@ -453,7 +552,7 @@ section#contact {
   background-position: center;
 }
 section#contact .section-heading {
-  color: var(--color-bg);
+  color: var(--color-bg-2) !important;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -510,7 +609,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .footer {
-  background-color: var(--color-bg-1) !important;
+  background-color: var(--color-bg-2) !important;
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

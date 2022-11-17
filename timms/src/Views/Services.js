@@ -4,10 +4,10 @@ import React, { Component, useState, useEffect } from 'react';
 function Services() {
   return(
     <div id="services">
-    <section class="page-section" id="services-body">
+    <section class="page-section hidden" id="services-body">
          <div class="container">
              <div class="text-center">
-                 <h2 class="section-heading text-uppercase">Services</h2>
+                 <h2 class="section-heading text-uppercase text-primary">Services</h2>
                  <h3 class="section-subheading text-muted">What we offer.</h3>
              </div>
              <div class="row text-center">
